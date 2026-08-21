@@ -105,7 +105,7 @@ def displayText(text, title="", width=100):
         print(textwrap.fill(paragraph.strip(), width=width))
         print()
 
-    return text
+    return
 # ---------------------------------------------------------------------------------------------------------
 
 def parse_usage(usage):
