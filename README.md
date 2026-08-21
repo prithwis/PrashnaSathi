@@ -28,7 +28,7 @@ PrashnaSathi separates the process into three distinct stages:
 
 The resulting prompt is then taken outside PrashnaSathi and submitted by the user to ChatGPT, Claude, Gemini or another suitable LLM.
 
-![PrashnaSathi Architecture](images/PrashnaSathi.png)
+![PrashnaSathi Architecture](https://raw.githubusercontent.com/prithwis/PrashnaSathi/refs/heads/main/Images/PrashnaSathi.png)
 
 
 ## 1. Get Facts
