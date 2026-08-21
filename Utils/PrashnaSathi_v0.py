@@ -80,6 +80,34 @@ def OpenAI_llm_call(system_prompt, user_prompt, model="gpt-4o-mini"):          #
 
 # ---------------------------------------------------------------------------------------------------------
 
+def displayText(text, title="", width=100):
+    """
+    Display a long text string in a readable, word-wrapped format.
+
+    Parameters
+    ----------
+    text : str
+        Text to display.
+
+    title : str, optional
+        Heading printed above the text.
+
+    width : int, default=100
+        Maximum display width before word wrapping.
+    """
+
+    import textwrap
+
+    if title:
+        print(f"\n--- {title} ---\n")
+
+    for paragraph in text.strip().split("\n\n"):
+        print(textwrap.fill(paragraph.strip(), width=width))
+        print()
+
+    return text
+# ---------------------------------------------------------------------------------------------------------
+
 def parse_usage(usage):
 
     completion_tokens = usage.completion_tokens
